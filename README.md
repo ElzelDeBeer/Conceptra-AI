@@ -1,34 +1,19 @@
-## INTRODUCTION: 
-Link to Conceptra AI - https://protofo-40inhw3.runable.site/
-## Project Name
-Conceptra AI
+# App template
 
-## Project Background
-An AI-powered visual content generator that transforms users product ideas into structured visual prototypes and marketing concepts.
+Runable copies this Bun and Turborepo project into each new sandbox.
 
-## Project purpose and objective 
-======
+The root package commands are the external contract:
 
-## PROJECT OVERVIEW: 
+- `bun run dev` starts the web app.
+- `bun run dev:desktop` and `bun run dev:mobile` start platform clients.
+- `bun run build` builds every package.
+- `bun run start` starts or restarts the production server.
+- `bun run stop` stops the production server.
+- `bun run lint` and `bun run typecheck` validate the project.
+- The `db:generate`, `db:migrate`, and `db:push` commands manage the database.
 
-## Target Market
-The Conceptra AI tool is targeted to Entrepreneurs, Students, Developers, Designers, Inventors, Startups, and it explores various scenario focuses such as everyday life, healthcare, accessibility, emergency / safety, education, retail, workplace, travel, marketing launch, etc. 
+Deployment tools depend on these command names. Their implementations may change, but the names must remain stable.
 
-## Key Functionalities & Features
-======
+The web package owns the API, database, and shared web interface. The mobile package is an Expo client. The desktop package is an Electron shell around the web app. Services use the fixed ports defined in `__ports.cjs`, and the web health endpoint is `/api/health`.
 
-## TECHNOLOGIES USED  
-Prompt Engineering (ChatGPT, Gemini)
-VS Code
-Natural Language  Processing (NLPs)
-Generative AI 
-
-## SYSTEM ARCHITECTURE
-=====
-
-## CHALLENGES & SOLUTIONS
-=====
-
-
-
-  
+Secrets belong in the root `.env` file. Browser values must use the `VITE_` prefix. Commands prefixed with `internal:` are for template maintenance.

@@ -82,8 +82,7 @@ Running locally needs your own keys (AI gateway, S3, database). Without them, th
 <img width="720" height="521" alt="Conceptra AI Competencies" src="https://github.com/user-attachments/assets/989c65cf-4a03-44de-8958-2b673969af22" />
 <img width="717" height="471" alt="PE Conceptra AI" src="https://github.com/user-attachments/assets/5951f64e-4ca2-4744-b6a2-ec6666f8bc42" />
 
-## HOW I PROMPTED THE AI TOOL FOR THE PROJECT
-<img width="563" height="528" alt="THE PROMPT TO AI" src="https://github.com/user-attachments/assets/aaeda429-31a2-4a0d-a1d5-5754550e9f52" />
+
 
 
 
